@@ -2,12 +2,9 @@ import Image from "next/image";
 import TechUsedSection from "./TechUsedSection";
 import LinksToCodePreview from "./LinksToCodePreview";
 
-const ProjectCard = ({ project, key }) => {
+const ProjectCard = ({ project }) => {
   return (
-    <article
-      key={key}
-      className="flex md:flex-row flex-col text-[#DAE7E4] md:gap-3 w-full gap-5"
-    >
+    <article className="flex md:flex-row flex-col text-[#DAE7E4] md:gap-3 w-full gap-5">
       <a
         href={project.page}
         target="_blank"

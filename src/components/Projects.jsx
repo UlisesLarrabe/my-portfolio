@@ -43,7 +43,9 @@ const Projects = () => {
       </header>
       <main className="flex flex-col gap-5 w-full">
         {MY_PROJECTS.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <div key={project.title}>
+            <ProjectCard project={project} />
+          </div>
         ))}
       </main>
     </section>
