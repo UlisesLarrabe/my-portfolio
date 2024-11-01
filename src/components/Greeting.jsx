@@ -1,5 +1,5 @@
 import Badge from "./Badge";
-import photoOfMe from "@/public/assets/me-photo.png";
+import photoOfMe from "@/public/assets/me.webp";
 import Image from "next/image";
 import LinkBadge from "./LinkBadge";
 import LinkedInIcon from "./icons/LinkedInIcon";
@@ -18,7 +18,7 @@ const Greeting = () => {
             alt="Foto de Ulises Alejandro Larrabe"
             className=" rounded-[300px]"
           />
-          <LinkBadge to="https://www.linkedin.com/in/ulises-alejandro-larrabe-aa4035260/">
+          <LinkBadge to="https://www.linkedin.com/in/ulises-alejandro-larrabe">
             <Badge colors="bg-blue-100 text-blue-800  dark:bg-blue-900 dark:text-blue-300">
               Disponible para trabajar
             </Badge>
@@ -45,7 +45,7 @@ const Greeting = () => {
             </Badge>
           </LinkBadge>
           <LinkBadge
-            to="https://www.linkedin.com/in/ulises-alejandro-larrabe-aa4035260/"
+            to="https://www.linkedin.com/in/ulises-alejandro-larrabe"
             classInfo="flex "
           >
             <Badge colors="bg-blue-100 text-[#ffff] text-xs  rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center">
@@ -53,7 +53,7 @@ const Greeting = () => {
               LinkedIn
             </Badge>
           </LinkBadge>
-          <LinkBadge to="https://github.com/UlisessAL" classInfo="flex ">
+          <LinkBadge to="https://github.com/UlisesLarrabe" classInfo="flex ">
             <Badge colors="bg-blue-100 text-[#ffff] text-xs rounded-full dark:bg-blue-900 dark:text-blue-100 flex justify-center items-center">
               <GithubIcon />
               Github
