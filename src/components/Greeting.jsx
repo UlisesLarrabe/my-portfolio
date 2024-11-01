@@ -1,6 +1,4 @@
 import Badge from "./Badge";
-import photoOfMe from "@/public/assets/me.webp";
-import Image from "next/image";
 import LinkBadge from "./LinkBadge";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GithubIcon from "./icons/GithubIcon";
@@ -8,17 +6,16 @@ import MailIcon from "./icons/MailIcon";
 
 const Greeting = () => {
   return (
-    <section className=" w-4/5 pt-7 flex flex-col gap-4 ">
+    <section className=" w-5/5 pt-7 flex flex-col gap-4 ">
       <header className="w-full flex flex-col gap-2 ">
-        <div className=" flex items-center gap-2">
-          <Image
-            src={photoOfMe}
-            width={60}
-            height={20}
+        <div className=" flex items-center gap-2 w-full">
+          <img
+          loading="lazy"
+            src={"assets/me.webp"}
             alt="Foto de Ulises Alejandro Larrabe"
-            className=" rounded-[300px]"
+            className="rounded-[100px] h-28 w-28 object-cover md:h-52 md:w-52 aspect-auto"
           />
-          <LinkBadge to="https://www.linkedin.com/in/ulises-alejandro-larrabe">
+          <LinkBadge classInfo={"w-full"} to="https://www.linkedin.com/in/ulises-alejandro-larrabe">
             <Badge colors="bg-blue-100 text-blue-800  dark:bg-blue-900 dark:text-blue-300">
               Disponible para trabajar
             </Badge>
