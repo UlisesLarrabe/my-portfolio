@@ -3,16 +3,27 @@ import shortyLinkImg from "@/public/assets/shorty-link.webp";
 import styleit from "@/public/assets/styleit.webp";
 import radiantsImg from "@/public/assets/radiants.webp";
 import ProjectCard from "./ProjectCard";
+import quePago from "@/public/assets/que-pago.webp";
 
 const Projects = () => {
   const MY_PROJECTS = [
+    {
+      title: "¿Qué pago?",
+      img: quePago,
+      description:
+        "Diseñada para gestionar y monitorear tus suscripciones, ofrece una interfaz intuitiva y visualmente atractiva. Ayuda a organizar tus pagos recurrentes y nunca olvidar una fecha importante.",
+      github: "https://github.com/UlisesLarrabe/web-que-pago",
+      github_two: "https://github.com/UlisesLarrabe/backend-que-pago",
+      page: "https://web-que-pago.vercel.app",
+      techUsed: ["NextJs", "TailwindCSS", "MongoDB", "Express", "NodeJs"],
+    },
     {
       title: "Radiants",
       img: radiantsImg,
       description:
         "App hecha para poder visualizar la información de cada agente del videojuego VALORANT, junto a sus habilidades, armas y cada mapa existente.",
-      github: "https://github.com/UlisessAL/radiants",
-      web: null,
+      github: "https://github.com/UlisesLarrabe/radiants",
+      page: null,
       techUsed: ["React Native"],
     },
     {
@@ -20,7 +31,7 @@ const Projects = () => {
       img: shortyLinkImg,
       description:
         "Pagina web realizada para poder acortar links de manera rápida y sencilla.",
-      github: "https://github.com/UlisessAL/Shorty-Link",
+      github: "https://github.com/UlisesLarrabe/Shorty-Link",
       page: "https://shortylink.vercel.app/",
       techUsed: ["NextJs", "TailwindCSS"],
     },
@@ -29,7 +40,7 @@ const Projects = () => {
       img: styleit,
       description:
         "Pagina web realizada para poder recortar imágenes, borrar el fondo y/o ajustar su brillo, utilizando la API de Cloudinary.",
-      github: "https://github.com/UlisessAL/customize-img-2",
+      github: "https://github.com/UlisesLarrabe/customize-img-2",
       page: "https://styleit.vercel.app/",
       techUsed: ["NextJs", "TailwindCSS"],
     },
